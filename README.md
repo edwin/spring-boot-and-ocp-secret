@@ -26,3 +26,8 @@ oc new-app registry.access.redhat.com/ubi8/openjdk-11~https://github.com/edwin/s
 ```
 oc set env --from=secret/mypassword dc/spring-boot-and-ocp-secret
 ``` 
+
+## Expose App URL in Openshift 
+```
+oc expose service spring-boot-and-ocp-secret
+``` 
